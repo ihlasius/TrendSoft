@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .jshintrc
-.shrift.txt
+/.shrift.txt
 # testing
 /coverage
 /shrift.txt
