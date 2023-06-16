@@ -4,10 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-/shrift.txt
-
+.jshintrc
+.shrift.txt
 # testing
 /coverage
+/shrift.txt
 
 # production
 /build
