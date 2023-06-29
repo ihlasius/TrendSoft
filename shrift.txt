@@ -1,6 +1,6 @@
 https://www.figma.com/file/vy3eousrxnVvHSKKC3EEp6/landing?type=design&node-id=10-5709&t=FK8eGLmHsyg9i9EI-0
 
-dfdfdfedf
+ubuntu normal
+  font-family: 'Ubuntu', sans-serif;
 
-fdfdfdf
-fgdf
+    transition: all 0.5s ease 0s;

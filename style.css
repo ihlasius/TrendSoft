@@ -18,7 +18,6 @@ html.body{
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -37,4 +36,85 @@ h1 h2 h3 h4 h5 h6{font-size: inherit; font-weight: 400;}
 /* Обнуляющие свойста весь пакет */
 body  {
   background-color: #333;
+}
+header{
+  background-color: #fff;
+  overflow: hidden;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.74rem 0rem 1.74rem 0rem;
+} 
+.contanier{
+  max-width: 1164px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__logo {
+  align-self: center;
+}
+.nav{
+  align-self: center;
+}
+.menu {
+  display: flex;
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 130%; 
+  letter-spacing: 0.0175rem;
+}
+.menu li a {
+  color: #000;
+  transition: all 0.5s ease 0s;
+}
+.menu li a:hover{
+  color: #F83718;
+}
+.menu li {
+  padding: 0px 1.56rem 0px 1.56rem;
+}
+.menu li:first-child {
+  padding: 0px 1.56rem 0px 0px;
+}
+.menu li:last-child {
+  padding: 0px 0px 0px 1.56rem;
+}
+.burger {
+}
+.header__language {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 4px;
+  border-radius: 0.75rem;
+}
+.language__ru {
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  padding: 0.89rem;
+  padding: 0.88894rem 0.875rem 0.88888rem 0.88894rem;
+  border-radius: 0.75rem;
+  /* for js */
+  background-color: #fff;
+  color: #000;
+}
+.language__en {
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  padding: 0.89rem;
+  padding: 0.88894rem 0.875rem 0.88888rem 0.88894rem;
+  color: #666;
+}
+
+.language__en:hover{
+  color: #F83718;
+  transition: all 0.5s ease 0s;
+}
+.language__ru:hover{
+  color: #F83718;
+  transition: all 0.5s ease 0s;
 }
