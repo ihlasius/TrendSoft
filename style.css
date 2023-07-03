@@ -36,6 +36,7 @@ h1 h2 h3 h4 h5 h6{font-size: inherit; font-weight: 400;}
 /* Обнуляющие свойста весь пакет */
 body  {
   background-color: #333;
+  font-family: 'Ubuntu', sans-serif;
 }
 header{
   background-color: #fff;
@@ -118,3 +119,98 @@ header{
   color: #F83718;
   transition: all 0.5s ease 0s;
 }
+/* wrapper */
+.wrapper {
+  height: 100%; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* wrapper */
+/* section solution */
+.solutions {
+  padding: 6.86rem 0px 5.44rem 0px;
+  background-color: #F83718;
+}
+.solutions__items__row {
+  display: flex;
+}
+.solutions__desc {
+  text-align: left;
+}
+.solution__title {
+  font-size: 3.125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #fff; 
+  margin: 0px 0px 1.88rem 0px;
+  padding: 0px 3.125rem 0px 0px;
+}
+.solution__subtitle {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0px 9.375rem 0px 0px;
+}
+.solution__desc__top {
+  margin: 0px 0px 1.5rem 0px;
+}
+/* Планшет */
+@media (max-width: 62em){
+  /* 990px */
+  .solutions {
+    padding: 5.86rem 0px 4.44rem 0px;
+    background-color: #F83718;
+  }
+  .solutions__items__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .solution__title{
+      padding: 0;
+  }
+  .solution__subtitle{
+    padding: 0px 0.500rem 0px 0px;
+  }
+  .solutions__desc{
+    text-align: center;
+  }
+}
+/* Мобильный телефон */
+@media (max-width: 47.937em){
+  .solutions__items__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .solutions{
+    padding: 2em 0.7rem 1.5rem 0.7em;
+    background-color: #F83718;
+  }
+  .solution__title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 120%;
+    color: #fff; 
+    margin: 0px 0px 1.88rem 0px;
+  }
+}
+.solution__desc__bottom {
+}
+.solutions__image {
+  max-width: 34.6555rem;
+} 
+.solutions__image img {
+  width: 100%;
+  padding: 0;
+}
+@media (max-width: 47.937em){
+  .solution__desc__bottom{
+    margin: 0px 0px 0.625rem 0px;
+  }
+}
+/* solution */
+
