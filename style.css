@@ -35,7 +35,6 @@ h1 h2 h3 h4 h5 h6{font-size: inherit; font-weight: 400;}
 
 /* Обнуляющие свойста весь пакет */
 body  {
-  background-color: #333;
   font-family: 'Ubuntu', sans-serif;
 }
 header{
@@ -212,5 +211,92 @@ header{
     margin: 0px 0px 0.625rem 0px;
   }
 }
-/* solution */
+/* section solution */
 
+/* section users */
+.users {
+  padding: 6.25rem 0px 3.69rem 0px;
+}
+.userstitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0px 0px 1.87rem 0px;
+}
+.red__title {
+  color: #F83718;
+  font-size: 2.5rem;
+}
+.users__desc {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0px 0px 4.38rem 0px;
+}
+.users__icon__row {
+  display: flex;
+  justify-content: space-around;
+}
+.users__icon__item {
+  text-align: center;
+}
+.users__icon {
+  margin: 0px 0px 1.37rem 0px;
+}
+.users__number {
+  line-height: 120%;
+}
+.users__icon-title {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+/* Адаптатив Планшет  */
+ @media (max-width: 62em){
+  .users{
+      padding: 4.25rem 0px 1.69rem 0px;
+      text-align: center;
+  }
+  .userstitle{
+    font-size: 2em;
+  }
+  .red__title{
+    font-size: 2rem;
+  }
+  .users__desc {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0px 0px 2.6em 0px;
+  }
+  .users__icon__row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .users__icon-title {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 150%;
+  }
+}
+/* Адаптатив мобильный телефон */
+@media (max-width: 47.937em){ 
+  .users{
+    padding: 3.25rem 15px 1.20rem 15px;
+    text-align: center;
+  }
+  .userstitle{
+    font-size: 1.5em;
+  }
+  .users__icon__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .users__icon__item{
+    margin: 0px 0px 30px 0px;
+  }
+}
