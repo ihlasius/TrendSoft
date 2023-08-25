@@ -27,3 +27,4 @@ ubuntu normal
         max-width: none;
     }
 }
+background: linear-gradient(to bottom, #fff 50%, #f9f9f9 50%);

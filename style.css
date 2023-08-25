@@ -46,11 +46,33 @@ header{
   justify-content: space-between;
   padding: 1.74rem 0rem 1.74rem 0rem;
 } 
+/* Общие */
 .contanier{
   max-width: 1164px;
   margin: 0 auto;
   text-align: center;
 }
+.subheader{
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.desc{
+  font-size: 1em;
+  font-weight: 300;
+  color: #1B1925;
+}
+.red__button {
+  background-color: #F83718;
+  padding: 0px 1.75rem 0px 1.75rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  padding: 0.5625rem 1.75rem;
+  line-height: 120%;
+  letter-spacing: 0.0175rem;
+  text-transform: uppercase;
+}
+/* Общие */
 .header__logo {
   align-self: center;
 }
@@ -302,48 +324,201 @@ header{
 } 
 /* section module */
 .module {
-  /* background: linear-gradient(to bottom, green 50%, red 50%); */
   background: linear-gradient(to bottom, #fff 50%, #f9f9f9 50%);
-  position: relative;
-  padding: 3.12rem 0px 3rem 0px;
-  z-index: 2;
+  z-index: -4;
 }
 .module__content {
-  width: 1164px;
+  max-width: 72.75rem;
   position: relative;
+  z-index: 2;
   background-color: #fff;
-  border: 2px solid #f9f9f9;
 }
 .module__dots {
   position: absolute;
-  bottom: -1.625rem;
-  left: -1.625rem;
+  bottom: -20px;
+  left: -20px;
   z-index: -2;
 }
 .module__item__row {
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 1.75rem;
 }
 .module__img {
+  flex: 0 0 50%;
+}
+.module__img img{
+  max-width: 100%;
 }
 .module__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0px 75px;
 }
 .module__header {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 120%;
-  text-transform: uppercase;
   margin: 0px 0px 1.87rem 0px;
+  text-align: left;
 }
 .module__desc {
+  text-align: left;
+  margin: 0px 0px 1.88rem 0px;
+}
+
+/* Адаптатив Планшет  992px 62em*/
+@media (max-width: 62em){
+  .module__text{
+    max-width: 750px;
+    padding: 0px 35px;
+  }
+}
+
+/* Адаптатив мобильный телефон 767px 47.937em*/
+@media (max-width: 47.937em){
+  .desc{
+    font-size: 1.2rem;
+  }
+  .subheader{
+    font-size: 1.5rem;
+  }
+  .module__item__row{
+    flex-direction: column;
+    max-width: none;
+  }
+  .module__dots{
+    display: none;
+  }
+  .module__text{
+    padding: 0px 15px;
+  }
+}
+
+/* section budget */
+.budget {
+  background-color: #f9f9f9;
+  padding: 3.13rem 0px 3.13rem 0px;
+  z-index: -4;
+}
+.budget__content {
+  max-width: 72.75rem;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+.budget__dots {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -2;
+}
+.budget__item__row {
+  display: flex;
+}
+.budget__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 120%; 
+  padding: 0px 75px;
+}
+.budget__header {
+  margin: 0px 0px 1.87rem 0px;
+  text-align: left;
+}
+.budget__desc {
+  text-align: left;
+  margin: 0px 0px 1.88rem 0px;
+}
+.module__button {
+  text-align: left;
+}
+.budget__img {
+  flex: 0 0 50%;
+}
+.budget__img img{
+  max-width: 100%;
+}
+
+/* Адаптатив Планшет  992px 62em*/
+@media (max-width: 62em){
+  .budget__text{
+    max-width: 750px;
+    padding: 0px 35px;
+  }
+}
+
+/* Адаптатив мобильный телефон 767px 47.937em*/
+@media (max-width: 47.937em){
+  .budget__item__row{
+    flex-direction: column;
+    max-width: none;
+  }
+  .budget__dots{
+    display: none;
+  }
+  .budget__text{
+    padding: 0px 15px;
+  }
+}
+/* Section produktion */
+.produktion{
+  background: #f9f9f9;
+  z-index: -4;
+}
+.produktion__content {
+  max-width: 72.75rem;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+.produktion__dots {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  z-index: -2;
+}
+.produktion__item__row {
+  display: flex;
+}
+.produktion__img {
+  flex: 0 0 50%;
+}
+.produktion__img img{
+  max-width: 100%;
+}
+.produktion__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0px 75px;
+}
+.produktion__header {
+  margin: 0px 0px 1.87rem 0px;
+  text-align: left;
+}
+.produktion__desc {
+  text-align: left;
+  margin: 0px 0px 1.88rem 0px;
+}
+
+/* Адаптатив Планшет  992px 62em*/
+@media (max-width: 62em){
+  .produktion__text{
+    max-width: 750px;
+    padding: 0px 35px;
+  }
+}
+
+/* Адаптатив мобильный телефон 767px 47.937em*/
+@media (max-width: 47.937em){
+  .produktion__item__row{
+    flex-direction: column;
+    max-width: none;
+  }
+  .produktion__dots{
+    display: none;
+  }
+  .produktion__text{
+    padding: 0px 15px;
+  }
 }
